@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web APIs Challenge</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="p-10">
+
+        <header>
+            <nav class="px-40 flex justify-between font-bold">
+                <a href="highscores.html">View high Scores</a>
+                <a href="highscores.html">Time: <span id="timer"></span></a>
+            </nav>
+        </header>
+
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="mx-auto max-w-2xl py-20">
+
+                <div id="questionsDiv" class="text-center">
+                    <h1 class="text-2xl font-bold tracking-tight text-gray-900">Quiz Game</h1>
+                    <p id="intro" class="mt-6 text-lg leading-8 text-gray-600">
+                        Try to answer the following questions correctly
+                        <br>
+                        You have upto 60 seconds to attempt the questions
+                        <br>
+                        5 seconds will be deducted from every question answered wrongly
+                        <br>
+                    </p>
+                    <ul id="optionsUl"></ul>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a 
+                            id="start"
+                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Get started
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <script src="questions.js"></script>
+
+    </body>
+</html>
